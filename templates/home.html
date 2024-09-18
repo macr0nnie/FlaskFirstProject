@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ronniesha Tirumalasetty Home Page</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css')}}"
+    />
+  </head>
+  
+  <body>
+    <div class="content"> 
+      <div class="Navigation">
+        <ul class="nav-ul">
+          <li><a href="{{url_for('home')}}">Home</a></li>
+          <li><a href="{{url_for('projects')}}">Projects</a></li>
+          <li><a href="{{url_for('projects')}}">Game Development</a></li>
+          <li><a href="https://github.com/macr0nnie" target="_blank">Github</a></li>
+        </ul>
+      </div>
+      
+      <div class="WebpageHeading">  
+        <h1>Ronniesha Tirumalasetty</h1> 
+      </div>
+
+      <div class="aboutme" style="text-align:center;"> 
+        <h3>ABOUT ME</h3>
+        <p>My name is Ronniesha Tirumalasetty. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. I am a recent graduate of Penn State University.</p>
+        <p>This content is centered.</p>
+      </div>
+
+      <div class="timeline">
+        <p>Penn State</p>
+        <p>Endo Pharmaceuticals</p>
+        <p>Microsoft TEALS Student Teacher</p>
+      </div>
+
+      <!--Projects-->
+      <div class = "Projects">
+      <h2>Projects</h2>
+      <ul> 
+        <li>Sourced user requirements from students and faculty to create an updated student portal.</li>
+        <li>Prototyped wireframe using Figma to create responsive, user-friendly design.</li>
+        <li>Created test scripts for usability tests with 10 students, achieving a 95% pass rate and improving project effectiveness by 20%.</li>
+        <li>Presented final project to stakeholders and peers, receiving an A+ for the final grade.</li>
+      </ul>
+      
+      <div class="imgformat"> 
+        <img class="imgformat" src="{{url_for('static', filename='CapstoneProject.PNG')}}" alt="Capstone Project Image">
+      </div>
+    </div>
+
+    <button type="button"> Open SAP Handout </button>
+    <iframe src="{{ url_for('static', filename='HandoutFinal.pdf') }}" width="100%" height="600px">
+      This browser does not support PDFs. Please download the PDF to view it: 
+    <a href="{{ url_for('static', filename='HandoutFinal.pdf.pdf') }}">Download PDF</a>.
+    </iframe>
+  
+
+      
+    </div>
+  </body>
+</html>

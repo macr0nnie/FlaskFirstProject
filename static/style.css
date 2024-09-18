@@ -55,7 +55,7 @@ ul {
   margin-top: 10%;
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #ffffffad;
+  background-color: #ffffffe9;
   backdrop-filter: blur(15px);
 }
 
@@ -86,7 +86,7 @@ li a {
   
 }
 li a:hover {
-  background-color: #dfd7e9;
+  background-color: #ab94c7;
   color: rgb(9, 1, 1);
   border: 2px solid rgba(0, 0, 0, 0.6);
   border-radius: 6px 6px 6px 6px;
